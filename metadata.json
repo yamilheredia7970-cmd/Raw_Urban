@@ -1,0 +1,6 @@
+{
+  "name": "STRIKE | Urban Streetwear",
+  "description": "Premium urban streetwear and bold contemporary apparel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

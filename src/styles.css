@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-primary: #ffffff;
+  --color-accent: #CCFF00;
+  --color-accent-hover: #ffffff;
+  --color-surface: #171717;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tighter uppercase;
+  }
+}
