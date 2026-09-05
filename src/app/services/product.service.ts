@@ -79,9 +79,9 @@ const MOCK_PRODUCTS: Product[] = [
     name: 'TACTICAL VEST',
     description: 'Layer up with this tech-wear inspired vest. Features magnetic buckles, mesh lining, and secure zip pockets.',
     price: 135.00,
-    image: 'https://images.unsplash.com/photo-1591557304192-23c21c72626e?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&q=80&w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1591557304192-23c21c72626e?auto=format&fit=crop&q=80&w=800'
+      'https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&q=80&w=800'
     ],
     category: 'Outerwear',
     sizes: ['M', 'L', 'XL'],
@@ -97,9 +97,9 @@ const MOCK_PRODUCTS: Product[] = [
     price: 75.00,
     originalPrice: 95.00,
     discount: 21,
-    image: 'https://images.unsplash.com/photo-1614251052600-4b2a8f8d6896?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800',
     gallery: [
-      'https://images.unsplash.com/photo-1614251052600-4b2a8f8d6896?auto=format&fit=crop&q=80&w=800'
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80&w=800'
     ],
     category: 'Sweatshirts',
     sizes: ['S', 'M', 'L', 'XL'],

@@ -48,7 +48,7 @@ import { MatIconModule } from '@angular/material/icon';
               <h3 class="text-[10px] font-black uppercase tracking-[0.2em] mb-6 text-neutral-400">Size Filter</h3>
               <div class="flex flex-wrap gap-2">
                 @for (size of ['S', 'M', 'L', 'XL', 'XXL']; track size) {
-                  <button class="w-10 h-10 border border-white/20 flex items-center justify-center text-xs font-bold hover:border-accent hover:text-accent transition-colors">{{ size }}</button>
+                  <button class="w-10 h-10 border border-white/20 flex items-center justify-center text-xs font-bold hover:border-accent hover:text-accent hover:scale-105 active:scale-95 transition-all">{{ size }}</button>
                 }
               </div>
             </div>
@@ -73,9 +73,9 @@ import { MatIconModule } from '@angular/material/icon';
 
           <!-- Products -->
           @if (filteredProducts().length > 0) {
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
-              @for (product of filteredProducts(); track product.id) {
-                <div class="border-b border-r border-white/10">
+            <div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+              @for (product of filteredProducts(); track product.id; let i = $index) {
+                <div class="border-b border-r border-white/10 animate-fade-up" [style.animation-delay.ms]="i * 60">
                   <app-product-card [product]="product"></app-product-card>
                 </div>
               }
