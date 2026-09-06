@@ -15,10 +15,13 @@ import { CartService } from '../services/cart.service';
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8 text-[10px] font-bold tracking-widest uppercase">
+        <nav class="hidden lg:flex space-x-6 text-[10px] font-bold tracking-widest uppercase">
           <a routerLink="/shop" routerLinkActive="border-b-2 border-accent text-white pb-1" [routerLinkActiveOptions]="{exact: true}" class="hover:text-accent transition-colors text-neutral-400">Shop / All</a>
+          <a routerLink="/shop" [queryParams]="{category: 'Outerwear'}" class="hover:text-accent transition-colors text-neutral-400">Outerwear</a>
           <a routerLink="/shop" [queryParams]="{category: 'Hoodies'}" class="hover:text-accent transition-colors text-neutral-400">Hoodies</a>
-          <a routerLink="/shop" [queryParams]="{category: 'Outerwear'}" class="hover:text-accent transition-colors text-neutral-400">Archive</a>
+          <a routerLink="/shop" [queryParams]="{category: 'T-Shirts'}" class="hover:text-accent transition-colors text-neutral-400">T-Shirts</a>
+          <a routerLink="/shop" [queryParams]="{category: 'Pants'}" class="hover:text-accent transition-colors text-neutral-400">Pants</a>
+          <a routerLink="/shop" [queryParams]="{category: 'Accessories'}" class="hover:text-accent transition-colors text-neutral-400">Accessories</a>
         </nav>
 
         <!-- Actions -->
