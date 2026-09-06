@@ -204,7 +204,7 @@ export class ProductDetailComponent implements OnInit {
           // Reset selections
           this.activeImageIndex.set(0);
           this.selectedColor.set(found.colors[0] || '');
-          this.selectedSize.set('');
+          this.selectedSize.set(found.sizes[0] || '');
           this.quantity.set(1);
           this.showAddedMessage.set(false);
         }
