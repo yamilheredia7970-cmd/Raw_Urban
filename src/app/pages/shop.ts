@@ -75,7 +75,7 @@ import { MatIconModule } from '@angular/material/icon';
           @if (filteredProducts().length > 0) {
             <div class="grid grid-cols-2 lg:grid-cols-3 auto-rows-fr">
               @for (product of filteredProducts(); track product.id; let i = $index) {
-                <div class="border-b border-r border-white/10 animate-fade-up" [style.animation-delay.ms]="i * 60">
+                <div class="border-b border-r border-white/10 animate-fade-up" [style.animation-delay.ms]="i * 90">
                   <app-product-card [product]="product"></app-product-card>
                 </div>
               }
