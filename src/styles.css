@@ -18,6 +18,12 @@
   }
 }
 
+@layer components {
+  .field-dark {
+    @apply w-full bg-neutral-900/50 border border-white/15 px-4 py-3 font-sans text-sm text-white placeholder:text-neutral-600 focus:outline-none focus:border-accent transition-colors;
+  }
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;
